@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap');
+
+/*Give all elements Zen Maru Gothic font*/
+* {
+	font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+/*Have body and html elements take up entire
+  page height and remove all margin*/
+body, html {
+	height: 100vh;
+	margin: 0;
+}
+
+/*menu and items divs will be flex boxes 
+  with content vertically & horizontally
+  centered*/
+.menu, .items {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*menu divs will take up the entire
+  width and height of the page*/
+.menu {
+	width: 100vw;
+	height: 100vh;
+  	gap: 5vw;
+}
+
+/*Each board will be a rectangular shape 
+  with a thin black border around it.  
+  It will contain the menu items so we'll
+  make this a flexbox as well*/
+.board {
+	height: 50%;
+	width: 40%;
+	border: 0.35vmin solid black;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*Black divs will have a black background*/
+.black {
+	background-color: black;
+}
+
+/*White divs will have a white background*/
+.white {
+	background-color: white;
+}
+
+/*h1 elements in white divs will be indented
+  a little and have no bottom margin*/
+.white h1 {
+	margin-left: 10%;
+	margin-bottom: 0;
+}
+
+/*ul elements in white divs will have no 
+  top margin and will have no bullet points*/
+.white ul {
+	margin-top: 0;
+	list-style-type: none;
+}
+
+/*li that have a ul as a parent will be a 
+  charcoal color*/
+ul > li {
+	color: #36454F;
+}
+
+/*the first instance of a ul in white divs
+  will be bolded because they are the menu 
+  items, we'll leave the prices un-bolded*/
+.white ul:first-child {
+	font-weight: bold;
+}
+
